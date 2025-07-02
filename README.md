@@ -1,130 +1,124 @@
-# Jupyter Notebooks für interaktives Programmieren und Windenergie-Vorhersage
+# Best Practice Lehre 2025: Jupyter Notebooks in der Ingenieurausbildung
 
-## 🎯 Überblick
+## Über diesen Vortrag
 
-Dieses Repository enthält ein interaktives Jupyter Notebook, das zwei wichtige Aspekte des modernen Ingenieurstudiums demonstriert:
+Dieser Vortrag und das dazugehörige Repository entstanden aus der praktischen Erfahrung, dass Programmieren im Ingenieurstudium oft als Hürde empfunden wird. Studierende sehen häufig nicht den direkten Bezug zwischen abstrakten Programmierkonzepten und ihren zukünftigen Aufgaben als Ingenieur:innen. 
 
-1. **Jupyter Notebooks als Lösung für häufige Programmierprobleme** - Wie interaktive Programmierung das Lernen und Verstehen von Code revolutioniert
-2. **Praktische Windenergie-Analyse mit Machine Learning** - Ein reales Ingenieursprojekt mit echten Wetterdaten vom Deutschen Wetterdienst
+Hier setzen Jupyter Notebooks an: Sie verbinden Code, Dokumentation und Visualisierungen in einem interaktiven Format, das besonders gut für das Lernen und Verstehen geeignet ist. Der Vortrag zeigt anhand eines konkreten Windenergie-Projekts, wie diese Technologie das Programmierenlernen revolutionieren kann.
 
-## 🚀 Interaktiv starten
+## Das Jupyter Notebook: Windenergie-Analyse
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/greenenergylab/bestpractice_lehre_2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fbestpractice_demo.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/greenenergylab/bestpractice25/HEAD?urlpath=%2Fdoc%2Ftree%2F%2Fnotebooks%2Fbestpractice25.ipynb)
 
-*Klicken Sie auf den Button oben, um das Notebook direkt im Browser zu starten - keine Installation erforderlich!*
+Das Herzstück dieses Repositories ist ein interaktives Jupyter Notebook, das eine vollständige Windenergie-Analyse durchführt. Es wurde bewusst so gestaltet, dass es sowohl die technischen Möglichkeiten von Notebooks demonstriert als auch ein spannendes Ingenieursproblem löst.
 
-## 📋 Inhalt des Notebooks
+### Was passiert im Notebook?
 
-### Teil 1: Jupyter Notebooks als Lösung für Programmierprobleme
-- **Problem**: Warum ist Programmieren oft schwierig?
-- **Lösung**: Modularer, interaktiver Ansatz mit Jupyter
-- **Demonstration**: Schritt-für-Schritt Einführung in die Notebook-Umgebung
+Das Notebook führt Sie durch eine realistische Windenergie-Studie:
 
-### Teil 2: Windenergie-Vorhersage mit Machine Learning
-- **Datensammlung**: Echte Winddaten vom Deutschen Wetterdienst (DWD)
-- **Engineering**: Umwandlung von Windgeschwindigkeit in elektrische Leistung
-- **Data Science**: Machine Learning zur Energievorhersage
-- **Analyse**: Wirtschaftliche und technische Bewertung
+**Datensammlung**: Wir holen uns echte Wetterdaten vom Deutschen Wetterdienst für Münster (NRW) der letzten 30 Tage. Dabei lernen Sie, wie man APIs nutzt und mit echten, "unaufgeräumten" Daten arbeitet.
 
-## 🛠️ Technische Details
+**Ingenieur-Berechnungen**: Die gemessenen Windgeschwindigkeiten werden mit der Leistungskurve einer realen Windkraftanlage verknüpft. So sehen Sie, wie aus Naturphänomenen elektrische Energie wird.
 
-### Verwendete Technologien
-- **Python**: Programmiersprache
-- **Jupyter Notebooks**: Interaktive Entwicklungsumgebung
-- **NumPy & Pandas**: Datenverarbeitung
-- **Matplotlib**: Datenvisualisierung
-- **Scikit-learn**: Machine Learning
-- **Requests**: API-Zugriff für Wetterdaten
+**Machine Learning**: Mit verschiedenen Algorithmen versuchen wir, die Windenergie-Produktion vorherzusagen. Dabei erkunden wir, welche Faktoren (Windgeschwindigkeit, Temperatur, Luftdruck) am wichtigsten sind.
 
-### Datenquelle
-- **Bright Sky API**: Kostenlose Schnittstelle zu DWD-Daten
-- **Standort**: Nordrhein-Westfalen (Münster)
-- **Zeitraum**: Letzte 30 Tage (wird automatisch aktualisiert)
+**Wirtschaftliche Bewertung**: Am Ende bewerten wir, ob sich eine Windkraftanlage an diesem Standort lohnen würde - mit allen Unsicherheiten und Annahmen, die in der echten Ingenieurspraxis auftreten.
 
-## 🎓 Lernziele
+### Warum gerade dieses Beispiel?
 
-Nach dem Durcharbeiten dieses Notebooks verstehen Sie:
+Windenergie ist ein Thema, das viele Studierende interessiert und das verschiedene Ingenieurdisziplinen verbindet. Gleichzeitig ist es komplex genug, um die Stärken von Jupyter Notebooks zu zeigen: die Möglichkeit, Berechnungen Schritt für Schritt nachzuvollziehen, Zwischenergebnisse zu visualisieren und verschiedene Szenarien durchzuspielen.
 
-1. **Jupyter Notebooks**:
-   - Warum sie Programmierung zugänglicher machen
-   - Wie modularer Code das Lernen erleichtert
-   - Praktische Anwendung für Datenanalyse
+## Schnellstart - Notebook ausprobieren
 
-2. **Data Science für Ingenieure**:
-   - Echte Daten sammeln und verarbeiten
-   - Windenergie-Berechnungen in der Praxis
-   - Machine Learning für Vorhersagen
-   - Bewertung von Modellqualität
+**Am einfachsten**: Klicken Sie auf den Binder-Button oben im Repository. Das Notebook startet direkt im Browser - ohne Installation, ohne Setup.
 
-3. **Praktische Fähigkeiten**:
-   - API-Nutzung für Datensammlung
-   - Feature Engineering
-   - Datenvisualisierung
-   - Wirtschaftliche Bewertung technischer Projekte
+**Für Fortgeschrittene**: Repository klonen und lokal ausführen (siehe Installationsanleitung unten).
 
-## 🔧 Lokale Installation
+## Was Sie aus dem Notebook mitnehmen
 
-Falls Sie das Notebook lokal ausführen möchten:
+Nach dem Durcharbeiten verstehen Sie:
 
-### Voraussetzungen
-- Python 3.8 oder höher
-- pip (Python Package Manager)
+- **Jupyter Notebooks**: Warum sie das Programmierenlernen erleichtern und wie sie in der Praxis eingesetzt werden
+- **Datenverarbeitung**: Vom rohen Datensatz zur aussagekräftigen Analyse
+- **Machine Learning**: Grundprinzipien und praktische Anwendung für Ingenieursprobleme  
+- **API-Nutzung**: Wie man externe Datenquellen anzapft
+- **Projektbewertung**: Technische und wirtschaftliche Faktoren bei Ingenieursentscheidungen
 
-### Installation
+## Technische Details
+
+### Verwendete Tools
+- **Python**: Die Basis für alles
+- **Pandas & NumPy**: Für Datenmanipulation und Berechnungen
+- **Matplotlib**: Für aussagekräftige Diagramme
+- **Scikit-learn**: Machine Learning Bibliothek
+- **Bright Sky API**: Zugang zu den DWD-Wetterdaten
+
+### Datengrundlage
+- **Quelle**: Deutscher Wetterdienst (DWD) via Bright Sky API
+- **Standort**: Münster, Nordrhein-Westfalen
+- **Zeitraum**: Jeweils die letzten 30 Tage (automatisch aktualisiert)
+- **Parameter**: Windgeschwindigkeit, -richtung, Temperatur, Luftdruck
+
+## Lokale Installation
+
+Falls Sie das Notebook auf Ihrem eigenen Rechner ausführen möchten:
+
 ```bash
 # Repository klonen
-git clone https://github.com/greenenergylab/bestpractice_lehre_2025
-cd IHRREPOSITORY
+git clone https://github.com/greenenergylab/bestpractice25.git
+cd bestpractice25
 
-# Abhängigkeiten installieren
+# Python-Pakete installieren
 pip install -r requirements.txt
 
-# Jupyter starten
+# Jupyter Notebook starten
 jupyter notebook bestpractice_demo.ipynb
 ```
 
-## 📊 Erwartete Ergebnisse
+**Systemvoraussetzungen**: Python 3.8 oder neuer
 
-Das Notebook zeigt typischerweise:
-- **Windverhältnisse in NRW**: Durchschnittlich 3-7 m/s
-- **Kapazitätsfaktor**: 15-25% (typisch für Onshore-Wind)
-- **Vorhersagequalität**: R² von 0.7-0.9 für kurzfristige Prognosen
-- **Wirtschaftlichkeit**: Amortisation nach 8-12 Jahren
+## Typische Ergebnisse
 
-## 🎯 Zielgruppe
+Die Analyse zeigt normalerweise:
+- Durchschnittliche Windgeschwindigkeiten von 3-7 m/s in NRW
+- Kapazitätsfaktor der Windkraftanlage zwischen 15-25%
+- Machine Learning Modelle mit R²-Werten von 0.7-0.9
+- Amortisationszeiten von 8-12 Jahren (je nach Annahmen)
 
-Dieses Notebook richtet sich an:
-- **Ingenieurstudenten**: Praktische Anwendung von Programmierung
-- **Dozenten**: Interaktive Lehrmaterialien für Data Literacy
-- **Fachkräfte**: Einführung in datengetriebene Ingenieursarbeit
-- **Interessierte**: Verständnis für Windenergie und Machine Learning
+*Hinweis: Da echte, aktuelle Wetterdaten verwendet werden, variieren die Ergebnisse je nach Ausführungszeitpunkt.*
 
-## 📝 Nutzungshinweise
+## Für wen ist das gedacht?
 
-- Das Notebook ist für **interaktive Nutzung** konzipiert
-- Führen Sie die Zellen **der Reihe nach** aus (Shift+Enter)
-- **Echte Daten** werden live vom DWD abgerufen
-- Die Ausführung dauert etwa **10-15 Minuten**
+**Studierende**: Praktisches Beispiel, wie Programmierung in der Ingenieurspraxis aussieht
 
-## 🔗 Weiterführende Ressourcen
+**Lehrende**: Erprobtes Material für interaktive Lehrveranstaltungen zu Data Science oder erneuerbaren Energien
+
+**Praktikerinnen und Praktiker**: Einstieg in datengetriebene Methoden im Ingenieurswesen
+
+**Neugierige**: Verständlicher Einblick in Windenergie und maschinelles Lernen
+
+## Hinweise zur Nutzung
+
+- Das Notebook ist für die interaktive Ausführung konzipiert
+- Führen Sie die Zellen nacheinander aus (Shift+Enter)
+- Die komplette Ausführung dauert etwa 10-15 Minuten
+- Bei der ersten Ausführung werden die Wetterdaten live abgerufen
+
+## Nützliche Links
 
 - [Jupyter Notebooks Dokumentation](https://jupyter-notebook.readthedocs.io/)
 - [Deutscher Wetterdienst Open Data](https://opendata.dwd.de/)
-- [Bright Sky API Dokumentation](https://brightsky.dev/)
-- [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
+- [Bright Sky API](https://brightsky.dev/)
+- [Scikit-learn Benutzerhandbuch](https://scikit-learn.org/stable/user_guide.html)
 
-## 🤝 Beitragen
+## Mitwirken
 
-Verbesserungen und Erweiterungen sind willkommen! Erstellen Sie gerne einen Pull Request oder öffnen Sie ein Issue.
+Feedback, Verbesserungsvorschläge und Pull Requests sind herzlich willkommen! Erstellen Sie gerne ein Issue oder kontaktieren Sie uns direkt.
 
-## 📄 Lizenz
+## Lizenz
 
 Dieses Projekt steht unter der MIT-Lizenz - siehe [LICENSE](LICENSE) für Details.
 
-## 👥 Kontakt
-
-Bei Fragen oder Anregungen können Sie gerne ein Issue erstellen oder sich direkt melden.
-
 ---
 
-*Entwickelt für die Förderung von Data Literacy im Ingenieurstudium* 🎓⚡
+*Entwickelt zur Förderung der Data Literacy im Ingenieurstudium* 🎓⚡
