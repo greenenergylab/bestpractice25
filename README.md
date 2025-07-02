@@ -117,7 +117,7 @@ Feedback, Verbesserungsvorschläge und Pull Requests sind herzlich willkommen! E
 
 ## Lizenz
 
-Dieses Projekt steht unter der MIT-Lizenz - siehe [LICENSE](LICENSE) für Details.
+Dieses Projekt steht unter der GNU General Public License v3.0 - siehe LICENSE für Details.
 
 ---
 
